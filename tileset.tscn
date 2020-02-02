@@ -1,0 +1,388 @@
+[gd_scene load_steps=36 format=2]
+
+[ext_resource path="res://Tiles/bridge_01.png" type="Texture" id=1]
+[ext_resource path="res://Tiles/bridge_02.png" type="Texture" id=2]
+[ext_resource path="res://Tiles/tile_left_corner.png" type="Texture" id=3]
+[ext_resource path="res://Tiles/tile_center.png" type="Texture" id=4]
+[ext_resource path="res://Tiles/tile_right_corner.png" type="Texture" id=5]
+[ext_resource path="res://Tiles/ground_left_corner.png" type="Texture" id=6]
+[ext_resource path="res://Tiles/ground_right_corner.png" type="Texture" id=7]
+[ext_resource path="res://Tiles/sand.png" type="Texture" id=8]
+[ext_resource path="res://Tiles/sand_3rocks.png" type="Texture" id=9]
+[ext_resource path="res://Tiles/sand_center.png" type="Texture" id=10]
+[ext_resource path="res://Tiles/sand_left_wall.png" type="Texture" id=11]
+[ext_resource path="res://Tiles/sand_right_wall.png" type="Texture" id=12]
+[ext_resource path="res://Tiles/sand_rock.png" type="Texture" id=13]
+[ext_resource path="res://Tiles/wood_platform_wall.png" type="Texture" id=14]
+[ext_resource path="res://Tiles/wood_platform_end.png" type="Texture" id=15]
+[ext_resource path="res://Tiles/wood_platform_center.png" type="Texture" id=16]
+[ext_resource path="res://Tiles/ground.png" type="Texture" id=17]
+[ext_resource path="res://Tiles/egypt_ground_center.png" type="Texture" id=18]
+[ext_resource path="res://Tiles/wood_platform_end_left.png" type="Texture" id=19]
+[ext_resource path="res://Tiles/sand_corner.png" type="Texture" id=20]
+[ext_resource path="res://Tiles/egypt_ground_corner.png" type="Texture" id=21]
+[ext_resource path="res://Tiles/egypt_roof.png" type="Texture" id=22]
+[ext_resource path="res://Tiles/cave_inside_corner.png" type="Texture" id=23]
+[ext_resource path="res://Tiles/dark.png" type="Texture" id=24]
+[ext_resource path="res://Tiles/egypt_corner.png" type="Texture" id=25]
+[ext_resource path="res://Tiles/cave_left_wall.png" type="Texture" id=26]
+[ext_resource path="res://Tiles/cave_outside_corner.png" type="Texture" id=27]
+[ext_resource path="res://Tiles/cave_tile.png" type="Texture" id=28]
+[ext_resource path="res://Tiles/ladder.png" type="Texture" id=29]
+[ext_resource path="res://Tiles/egypt_left_tile.png" type="Texture" id=30]
+[ext_resource path="res://Tiles/egypt_right_tile.png" type="Texture" id=31]
+[ext_resource path="res://Tiles/egypt_only_tile.png" type="Texture" id=32]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 100.001, 100.869 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 103.125, 43.75 )
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 91.8107
+height = 166.019
+
+[node name="Node2D" type="Node2D"]
+
+[node name="bridge_stack" type="Sprite" parent="."]
+position = Vector2( 33, 32 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 1 )
+
+[node name="bridge_center" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 96, 33 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="bridge_center"]
+position = Vector2( 800, 193.75 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bridge_center/StaticBody2D2"]
+position = Vector2( -800.012, -208.245 )
+shape = SubResource( 1 )
+
+[node name="tile_left_corner" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 160, 32 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 3 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="tile_left_corner"]
+position = Vector2( 0, -3.125 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile_left_corner/StaticBody2D2"]
+shape = SubResource( 1 )
+
+[node name="tile_center" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 224, 32 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="tile_center"]
+position = Vector2( 0.00012207, -3.12499 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile_center/StaticBody2D3"]
+shape = SubResource( 1 )
+
+[node name="tile_right_corner" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 289, 32 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 5 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="tile_right_corner"]
+position = Vector2( 0.00012207, -3.125 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="tile_right_corner/StaticBody2D3"]
+shape = SubResource( 1 )
+
+[node name="ground_left_corner" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 31.4, 96.4 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 6 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="ground_left_corner"]
+position = Vector2( -1.25, -4.37494 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground_left_corner/StaticBody2D2"]
+shape = SubResource( 1 )
+
+[node name="ground_right_corner" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 97, 97 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 7 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="ground_right_corner"]
+position = Vector2( -3.125, -3.125 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground_right_corner/StaticBody2D2"]
+shape = SubResource( 1 )
+
+[node name="sand" type="Sprite" parent="."]
+position = Vector2( 160, 96 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 8 )
+
+[node name="sand_3rocks" type="Sprite" parent="."]
+position = Vector2( 352.5, 96.5 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 9 )
+
+[node name="sand_center" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 96, 160 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 10 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="sand_center"]
+position = Vector2( 0, -3.12491 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sand_center/StaticBody2D2"]
+shape = SubResource( 1 )
+
+[node name="sand_left_wall" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 32, 160 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 11 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="sand_left_wall"]
+position = Vector2( 0, -3.125 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sand_left_wall/StaticBody2D3"]
+shape = SubResource( 1 )
+
+[node name="sand_fake_wall" type="Sprite" parent="."]
+position = Vector2( 32.95, 225.55 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 11 )
+
+[node name="sand_right_wall" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 224, 96 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 12 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="sand_right_wall"]
+position = Vector2( 0, -3.125 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sand_right_wall/StaticBody2D3"]
+shape = SubResource( 1 )
+
+[node name="sand_rock" type="Sprite" parent="."]
+position = Vector2( 288.5, 96.5 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 13 )
+
+[node name="wood_platform_wall" type="Sprite" parent="."]
+position = Vector2( 160, 160 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 14 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="wood_platform_wall"]
+position = Vector2( 0, 9.15527e-005 )
+scale = Vector2( 0.999985, 0.960406 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wood_platform_wall/StaticBody2D2"]
+shape = SubResource( 1 )
+
+[node name="wood_platform_end" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 288, 143 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 15 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="wood_platform_end"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wood_platform_end/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="wood_platform_center" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 224, 143 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 16 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="wood_platform_center"]
+position = Vector2( -6.10352e-005, -6.10352e-005 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wood_platform_center/StaticBody2D2"]
+shape = SubResource( 2 )
+
+[node name="ground" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 352, 160 )
+scale = Vector2( 0.319995, 0.30733 )
+texture = ExtResource( 17 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="ground"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="egypt_ground_center" type="Sprite" parent="."]
+position = Vector2( 480, 33 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 18 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="egypt_ground_center"]
+position = Vector2( 0.000244141, -3.17468 )
+scale = Vector2( 1.01586, 0.97565 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="egypt_ground_center/StaticBody2D3"]
+shape = SubResource( 1 )
+
+[node name="wood_platform_end_left" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 416, 144 )
+scale = Vector2( 0.32, 0.32 )
+texture = ExtResource( 19 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="wood_platform_end_left"]
+position = Vector2( 6.25, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="wood_platform_end_left/StaticBody2D2"]
+shape = SubResource( 2 )
+
+[node name="sand_corner" type="Sprite" parent="."]
+position = Vector2( 416, 32 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 20 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="sand_corner"]
+position = Vector2( 0.00012207, 2.28882e-005 )
+scale = Vector2( 1.01586, 0.97565 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sand_corner/StaticBody2D4"]
+shape = SubResource( 1 )
+
+[node name="egypt_ground_corner" type="Sprite" parent="."]
+position = Vector2( 416, 96 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 21 )
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="egypt_ground_corner"]
+scale = Vector2( 1.01586, 0.97565 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="egypt_ground_corner/StaticBody2D5"]
+shape = SubResource( 1 )
+
+[node name="egypt_roof" type="Sprite" parent="."]
+position = Vector2( 481, 97 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 22 )
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="egypt_roof"]
+position = Vector2( -3.1748, -3.17468 )
+scale = Vector2( 1.01586, 0.97565 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="egypt_roof/StaticBody2D6"]
+shape = SubResource( 1 )
+
+[node name="cave_inside_corner" type="Sprite" parent="."]
+position = Vector2( 546, 32 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 23 )
+
+[node name="dark" type="Sprite" parent="."]
+position = Vector2( 354, 31 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 24 )
+
+[node name="egypt_corner" type="Sprite" parent="."]
+position = Vector2( 547, 96 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 25 )
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="egypt_corner"]
+position = Vector2( -3.17456, -3.17453 )
+scale = Vector2( 1.01586, 0.97565 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="egypt_corner/StaticBody2D7"]
+shape = SubResource( 1 )
+
+[node name="cave_left_wall" type="Sprite" parent="."]
+position = Vector2( 610, 32 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 26 )
+
+[node name="cave_outside_corner" type="Sprite" parent="."]
+position = Vector2( 609, 94.8336 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 27 )
+
+[node name="cave_tile" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 673, 31 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 28 )
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="cave_tile"]
+position = Vector2( -3.17456, -6.10352e-005 )
+scale = Vector2( 1.01586, 0.97565 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="cave_tile/StaticBody2D8"]
+shape = SubResource( 1 )
+
+[node name="ladder" type="Sprite" parent="."]
+position = Vector2( 738, 64 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 29 )
+
+[node name="Area2D" type="Area2D" parent="ladder"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ladder/Area2D"]
+position = Vector2( -3.17456, -6.3492 )
+rotation = 0.0502421
+shape = SubResource( 3 )
+
+[node name="egypt_left_tile" type="Sprite" parent="."]
+position = Vector2( 623.387, 173.742 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 30 )
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="egypt_left_tile"]
+position = Vector2( -1.22803, 0.81781 )
+scale = Vector2( 1.01586, 0.97565 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="egypt_left_tile/StaticBody2D8"]
+shape = SubResource( 1 )
+
+[node name="egypt_right_tile" type="Sprite" parent="."]
+position = Vector2( 554.03, 173.552 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 31 )
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="egypt_right_tile"]
+position = Vector2( -3.26904, -1.75092 )
+scale = Vector2( 1.01586, 0.97565 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="egypt_right_tile/StaticBody2D9"]
+shape = SubResource( 1 )
+
+[node name="egypt_only_tile" type="Sprite" parent="."]
+position = Vector2( 693.035, 172.52 )
+scale = Vector2( 0.315, 0.315 )
+texture = ExtResource( 32 )
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="egypt_only_tile"]
+position = Vector2( -0.11084, -1.65118 )
+scale = Vector2( 1.01586, 0.97565 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="egypt_only_tile/StaticBody2D10"]
+shape = SubResource( 1 )
+

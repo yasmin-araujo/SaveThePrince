@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/success-resolution-video-game-fanfare-sound-effect.wav-1260a1267b4e66be2c034622bd04aaaa.sample"
+
+[deps]
+
+source_file="res://Music/success-resolution-video-game-fanfare-sound-effect.wav"
+dest_files=[ "res://.import/success-resolution-video-game-fanfare-sound-effect.wav-1260a1267b4e66be2c034622bd04aaaa.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

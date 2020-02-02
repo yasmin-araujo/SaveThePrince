@@ -1,0 +1,522 @@
+[gd_resource type="TileSet" load_steps=36 format=2]
+
+[ext_resource path="res://Tiles/bridge_01.png" type="Texture" id=1]
+[ext_resource path="res://Tiles/bridge_02.png" type="Texture" id=2]
+[ext_resource path="res://Tiles/sand_center.png" type="Texture" id=3]
+[ext_resource path="res://Tiles/sand_left_wall.png" type="Texture" id=4]
+[ext_resource path="res://Tiles/sand_right_wall.png" type="Texture" id=5]
+[ext_resource path="res://Tiles/sand_rock.png" type="Texture" id=6]
+[ext_resource path="res://Tiles/wood_platform_wall.png" type="Texture" id=7]
+[ext_resource path="res://Tiles/wood_platform_end.png" type="Texture" id=8]
+[ext_resource path="res://Tiles/wood_platform_center.png" type="Texture" id=9]
+[ext_resource path="res://Tiles/ground.png" type="Texture" id=10]
+[ext_resource path="res://Tiles/egypt_ground_center.png" type="Texture" id=11]
+[ext_resource path="res://Tiles/wood_platform_end_left.png" type="Texture" id=12]
+[ext_resource path="res://Tiles/tile_left_corner.png" type="Texture" id=13]
+[ext_resource path="res://Tiles/sand_corner.png" type="Texture" id=14]
+[ext_resource path="res://Tiles/egypt_ground_corner.png" type="Texture" id=15]
+[ext_resource path="res://Tiles/egypt_roof.png" type="Texture" id=16]
+[ext_resource path="res://Tiles/cave_inside_corner.png" type="Texture" id=17]
+[ext_resource path="res://Tiles/dark.png" type="Texture" id=18]
+[ext_resource path="res://Tiles/egypt_corner.png" type="Texture" id=19]
+[ext_resource path="res://Tiles/cave_left_wall.png" type="Texture" id=20]
+[ext_resource path="res://Tiles/cave_outside_corner.png" type="Texture" id=21]
+[ext_resource path="res://Tiles/cave_tile.png" type="Texture" id=22]
+[ext_resource path="res://Tiles/ladder.png" type="Texture" id=23]
+[ext_resource path="res://Tiles/tile_center.png" type="Texture" id=24]
+[ext_resource path="res://Tiles_Sprites/6.png" type="Texture" id=25]
+[ext_resource path="res://Tiles/egypt_left_tile.png" type="Texture" id=26]
+[ext_resource path="res://Tiles/egypt_right_tile.png" type="Texture" id=27]
+[ext_resource path="res://Tiles/egypt_only_tile.png" type="Texture" id=28]
+[ext_resource path="res://Tiles/tile_right_corner.png" type="Texture" id=29]
+[ext_resource path="res://Tiles/ground_left_corner.png" type="Texture" id=30]
+[ext_resource path="res://Tiles/ground_right_corner.png" type="Texture" id=31]
+[ext_resource path="res://Tiles/sand.png" type="Texture" id=32]
+[ext_resource path="res://Tiles/sand_3rocks.png" type="Texture" id=33]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 100.001, 100.869 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 103.125, 43.75 )
+
+[resource]
+0/name = "bridge_stack"
+0/texture = ExtResource( 1 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 174, 200 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 87, 100 )
+0/navigation_offset = Vector2( 87, 100 )
+0/shapes = [  ]
+0/z_index = 0
+1/name = "bridge_center"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 175, 200 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 87.5, 100 )
+1/navigation_offset = Vector2( 87.5, 100 )
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 87.5, 93.7503 )
+} ]
+1/z_index = 0
+2/name = "tile_left_corner"
+2/texture = ExtResource( 13 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 200, 200 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 100, 100 )
+2/navigation_offset = Vector2( 100, 100 )
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 100, 96.875 )
+} ]
+2/z_index = 0
+3/name = "tile_center"
+3/texture = ExtResource( 24 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 0, 200, 200 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 100, 100 )
+3/navigation_offset = Vector2( 100, 100 )
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 100, 96.875 )
+} ]
+3/z_index = 0
+4/name = "tile_right_corner"
+4/texture = ExtResource( 29 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 200, 200 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 100, 100 )
+4/navigation_offset = Vector2( 100, 100 )
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 100, 96.875 )
+} ]
+4/z_index = 0
+6/name = "ground_left_corner"
+6/texture = ExtResource( 30 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 200, 200 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 100, 100 )
+6/navigation_offset = Vector2( 100, 100 )
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 98.75, 95.6251 )
+} ]
+6/z_index = 0
+7/name = "ground_right_corner"
+7/texture = ExtResource( 31 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 200, 200 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 100, 100 )
+7/navigation_offset = Vector2( 100, 100 )
+7/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 96.875, 96.875 )
+} ]
+7/z_index = 0
+8/name = "sand"
+8/texture = ExtResource( 32 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 200, 200 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 100, 100 )
+8/navigation_offset = Vector2( 100, 100 )
+8/shapes = [  ]
+8/z_index = 0
+9/name = "sand_3rocks"
+9/texture = ExtResource( 33 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 200, 200 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 100, 100 )
+9/navigation_offset = Vector2( 100, 100 )
+9/shapes = [  ]
+9/z_index = 0
+10/name = "sand_center"
+10/texture = ExtResource( 3 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 200, 200 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 100, 100 )
+10/navigation_offset = Vector2( 100, 100 )
+10/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 100, 96.8751 )
+} ]
+10/z_index = 0
+11/name = "sand_left_wall"
+11/texture = ExtResource( 4 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 200, 200 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 100, 100 )
+11/navigation_offset = Vector2( 100, 100 )
+11/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 100, 96.875 )
+} ]
+11/z_index = 0
+12/name = "sand_right_wall"
+12/texture = ExtResource( 5 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 200, 200 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 100, 100 )
+12/navigation_offset = Vector2( 100, 100 )
+12/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 100, 96.875 )
+} ]
+12/z_index = 0
+13/name = "sand_rock"
+13/texture = ExtResource( 6 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 200, 200 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 100, 100 )
+13/navigation_offset = Vector2( 100, 100 )
+13/shapes = [  ]
+13/z_index = 0
+14/name = "wood_platform_wall"
+14/texture = ExtResource( 7 )
+14/tex_offset = Vector2( 0, 0 )
+14/modulate = Color( 1, 1, 1, 1 )
+14/region = Rect2( 0, 0, 200, 200 )
+14/tile_mode = 0
+14/occluder_offset = Vector2( 100, 100 )
+14/navigation_offset = Vector2( 100, 100 )
+14/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 0.999985, 0, 0, 0.960406, 100, 100 )
+} ]
+14/z_index = 0
+15/name = "wood_platform_end"
+15/texture = ExtResource( 8 )
+15/tex_offset = Vector2( 0, 0 )
+15/modulate = Color( 1, 1, 1, 1 )
+15/region = Rect2( 0, 0, 200, 88 )
+15/tile_mode = 0
+15/occluder_offset = Vector2( 100, 44 )
+15/navigation_offset = Vector2( 100, 44 )
+15/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 100, 44 )
+} ]
+15/z_index = 0
+16/name = "wood_platform_center"
+16/texture = ExtResource( 9 )
+16/tex_offset = Vector2( 0, 0 )
+16/modulate = Color( 1, 1, 1, 1 )
+16/region = Rect2( 0, 0, 200, 86 )
+16/tile_mode = 0
+16/occluder_offset = Vector2( 100, 43 )
+16/navigation_offset = Vector2( 100, 43 )
+16/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 99.9999, 42.9999 )
+} ]
+16/z_index = 0
+17/name = "ground"
+17/texture = ExtResource( 10 )
+17/tex_offset = Vector2( 0, 0 )
+17/modulate = Color( 1, 1, 1, 1 )
+17/region = Rect2( 0, 0, 200, 200 )
+17/tile_mode = 0
+17/occluder_offset = Vector2( 100, 100 )
+17/navigation_offset = Vector2( 100, 100 )
+17/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 100, 100 )
+} ]
+17/z_index = 0
+18/name = "egypt_ground_center"
+18/texture = ExtResource( 11 )
+18/tex_offset = Vector2( 0, 0 )
+18/modulate = Color( 1, 1, 1, 1 )
+18/region = Rect2( 0, 0, 200, 200 )
+18/tile_mode = 0
+18/occluder_offset = Vector2( 100, 100 )
+18/navigation_offset = Vector2( 100, 100 )
+18/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1.01586, 0, 0, 0.97565, 100, 96.8253 )
+} ]
+18/z_index = 0
+19/name = "wood_platform_end_left"
+19/texture = ExtResource( 12 )
+19/tex_offset = Vector2( 0, 0 )
+19/modulate = Color( 1, 1, 1, 1 )
+19/region = Rect2( 0, 0, 200, 88 )
+19/tile_mode = 0
+19/occluder_offset = Vector2( 100, 44 )
+19/navigation_offset = Vector2( 100, 44 )
+19/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 106.25, 44 )
+} ]
+19/z_index = 0
+20/name = "sand_corner"
+20/texture = ExtResource( 14 )
+20/tex_offset = Vector2( 0, 0 )
+20/modulate = Color( 1, 1, 1, 1 )
+20/region = Rect2( 0, 0, 200, 200 )
+20/tile_mode = 0
+20/occluder_offset = Vector2( 100, 100 )
+20/navigation_offset = Vector2( 100, 100 )
+20/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1.01586, 0, 0, 0.97565, 100, 100 )
+} ]
+20/z_index = 0
+21/name = "egypt_ground_corner"
+21/texture = ExtResource( 15 )
+21/tex_offset = Vector2( 0, 0 )
+21/modulate = Color( 1, 1, 1, 1 )
+21/region = Rect2( 0, 0, 200, 200 )
+21/tile_mode = 0
+21/occluder_offset = Vector2( 100, 100 )
+21/navigation_offset = Vector2( 100, 100 )
+21/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1.01586, 0, 0, 0.97565, 100, 100 )
+} ]
+21/z_index = 0
+22/name = "egypt_roof"
+22/texture = ExtResource( 16 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 0, 0, 200, 200 )
+22/tile_mode = 0
+22/occluder_offset = Vector2( 100, 100 )
+22/navigation_offset = Vector2( 100, 100 )
+22/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1.01586, 0, 0, 0.97565, 96.8252, 96.8253 )
+} ]
+22/z_index = 0
+23/name = "cave_inside_corner"
+23/texture = ExtResource( 17 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 0, 0, 200, 200 )
+23/tile_mode = 0
+23/occluder_offset = Vector2( 100, 100 )
+23/navigation_offset = Vector2( 100, 100 )
+23/shapes = [  ]
+23/z_index = 0
+24/name = "dark"
+24/texture = ExtResource( 18 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 0, 0, 200, 200 )
+24/tile_mode = 0
+24/occluder_offset = Vector2( 100, 100 )
+24/navigation_offset = Vector2( 100, 100 )
+24/shapes = [  ]
+24/z_index = 0
+25/name = "egypt_corner"
+25/texture = ExtResource( 19 )
+25/tex_offset = Vector2( 0, 0 )
+25/modulate = Color( 1, 1, 1, 1 )
+25/region = Rect2( 0, 0, 200, 200 )
+25/tile_mode = 0
+25/occluder_offset = Vector2( 100, 100 )
+25/navigation_offset = Vector2( 100, 100 )
+25/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1.01586, 0, 0, 0.97565, 96.8254, 96.8255 )
+} ]
+25/z_index = 0
+26/name = "cave_left_wall"
+26/texture = ExtResource( 20 )
+26/tex_offset = Vector2( 0, 0 )
+26/modulate = Color( 1, 1, 1, 1 )
+26/region = Rect2( 0, 0, 200, 200 )
+26/tile_mode = 0
+26/occluder_offset = Vector2( 100, 100 )
+26/navigation_offset = Vector2( 100, 100 )
+26/shapes = [  ]
+26/z_index = 0
+27/name = "cave_outside_corner"
+27/texture = ExtResource( 21 )
+27/tex_offset = Vector2( 0, 0 )
+27/modulate = Color( 1, 1, 1, 1 )
+27/region = Rect2( 0, 0, 200, 200 )
+27/tile_mode = 0
+27/occluder_offset = Vector2( 100, 100 )
+27/navigation_offset = Vector2( 100, 100 )
+27/shapes = [  ]
+27/z_index = 0
+28/name = "cave_tile"
+28/texture = ExtResource( 22 )
+28/tex_offset = Vector2( 0, 0 )
+28/modulate = Color( 1, 1, 1, 1 )
+28/region = Rect2( 0, 0, 200, 200 )
+28/tile_mode = 0
+28/occluder_offset = Vector2( 100, 100 )
+28/navigation_offset = Vector2( 100, 100 )
+28/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1.01586, 0, 0, 0.97565, 96.8254, 99.9999 )
+} ]
+28/z_index = 0
+29/name = "ladder"
+29/texture = ExtResource( 23 )
+29/tex_offset = Vector2( 0, 0 )
+29/modulate = Color( 1, 1, 1, 1 )
+29/region = Rect2( 0, 0, 200, 400 )
+29/tile_mode = 0
+29/occluder_offset = Vector2( 100, 200 )
+29/navigation_offset = Vector2( 100, 200 )
+29/shapes = [  ]
+29/z_index = 0
+30/name = "sand_fake_wall"
+30/texture = ExtResource( 4 )
+30/tex_offset = Vector2( 0, 0 )
+30/modulate = Color( 1, 1, 1, 1 )
+30/region = Rect2( 0, 0, 200, 200 )
+30/tile_mode = 0
+30/occluder_offset = Vector2( 100, 100 )
+30/navigation_offset = Vector2( 100, 100 )
+30/shapes = [  ]
+30/z_index = 0
+31/name = "6"
+31/texture = ExtResource( 25 )
+31/tex_offset = Vector2( 0, 0 )
+31/modulate = Color( 1, 1, 1, 1 )
+31/region = Rect2( 0, 0, 32, 32 )
+31/tile_mode = 0
+31/occluder_offset = Vector2( 16, 16 )
+31/navigation_offset = Vector2( 16, 16 )
+31/shapes = [  ]
+31/z_index = 0
+32/name = "egypt_left_tile"
+32/texture = ExtResource( 26 )
+32/tex_offset = Vector2( 0, 0 )
+32/modulate = Color( 1, 1, 1, 1 )
+32/region = Rect2( 0, 0, 200, 200 )
+32/tile_mode = 0
+32/occluder_offset = Vector2( 100, 100 )
+32/navigation_offset = Vector2( 100, 100 )
+32/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1.01586, 0, 0, 0.97565, 98.772, 100.818 )
+} ]
+32/z_index = 0
+33/name = "egypt_right_tile"
+33/texture = ExtResource( 27 )
+33/tex_offset = Vector2( 0, 0 )
+33/modulate = Color( 1, 1, 1, 1 )
+33/region = Rect2( 0, 0, 200, 200 )
+33/tile_mode = 0
+33/occluder_offset = Vector2( 100, 100 )
+33/navigation_offset = Vector2( 100, 100 )
+33/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1.01586, 0, 0, 0.97565, 96.731, 98.2491 )
+} ]
+33/z_index = 0
+34/name = "egypt_only_tile"
+34/texture = ExtResource( 28 )
+34/tex_offset = Vector2( 0, 0 )
+34/modulate = Color( 1, 1, 1, 1 )
+34/region = Rect2( 0, 0, 200, 200 )
+34/tile_mode = 0
+34/occluder_offset = Vector2( 100, 100 )
+34/navigation_offset = Vector2( 100, 100 )
+34/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1.01586, 0, 0, 0.97565, 99.8892, 98.3488 )
+} ]
+34/z_index = 0
+
